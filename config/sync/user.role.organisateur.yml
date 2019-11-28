@@ -1,0 +1,9 @@
+uuid: 6ba05cc8-467e-4cab-949b-7c03bc4e8e4c
+langcode: fr
+status: true
+dependencies: {  }
+id: organisateur
+label: organisateur
+weight: 3
+is_admin: null
+permissions: {  }
