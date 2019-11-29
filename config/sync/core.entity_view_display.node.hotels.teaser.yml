@@ -18,4 +18,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_adresse: true
+  field_description: true
+  field_email: true
+  field_prix: true
+  field_telephone: true
   langcode: true

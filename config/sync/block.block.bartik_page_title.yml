@@ -2,8 +2,6 @@ uuid: ad0a5adb-8614-4d65-b40b-d08b98c4ff6f
 langcode: fr
 status: true
 dependencies:
-  module:
-    - node
   theme:
     - bartik
 _core:
@@ -19,11 +17,4 @@ settings:
   label: 'Titre de page'
   provider: core
   label_display: '0'
-visibility:
-  node_type:
-    id: node_type
-    bundles:
-      page: page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }
