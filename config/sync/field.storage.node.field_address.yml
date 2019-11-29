@@ -1,17 +1,16 @@
-uuid: 0f17ae6f-58b4-425e-bce5-b0f143470642
+uuid: f0280b5f-5fad-4d2b-b8aa-fc8e2151e061
 langcode: fr
 status: true
 dependencies:
   module:
+    - address
     - node
-    - text
-id: node.field_adresse
-field_name: field_adresse
+id: node.field_address
+field_name: field_address
 entity_type: node
-type: text
-settings:
-  max_length: 255
-module: text
+type: address
+settings: {  }
+module: address
 locked: false
 cardinality: 1
 translatable: true

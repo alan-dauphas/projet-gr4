@@ -1,5 +1,6 @@
 module:
   action: 0
+  address: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
@@ -15,6 +16,7 @@ module:
   config_filter: 0
   config_split: 0
   contact: 0
+  content_access: 0
   contextual: 0
   datetime: 0
   dynamic_page_cache: 0
