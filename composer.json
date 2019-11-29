@@ -26,6 +26,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drupal/devel": "^2.1",
+        "drupal/nexus": "^1.4",
         "drupal/node_export": "1.x-dev",
         "drupal/webform": "^5.5",
         "drush/drush": "^9.0.0",
