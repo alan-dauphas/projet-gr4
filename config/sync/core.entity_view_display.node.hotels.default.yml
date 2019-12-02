@@ -3,13 +3,14 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.hotels.field_adresse
+    - field.field.node.hotels.field_address
     - field.field.node.hotels.field_description
     - field.field.node.hotels.field_email
     - field.field.node.hotels.field_prix
     - field.field.node.hotels.field_telephone
     - node.type.hotels
   module:
+    - address
     - text
     - user
 id: node.hotels.default
@@ -17,29 +18,29 @@ targetEntityType: node
 bundle: hotels
 mode: default
 content:
-  field_adresse:
-    weight: 103
+  field_address:
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: address_default
     region: content
   field_description:
-    weight: 102
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_email:
-    weight: 104
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_prix:
-    weight: 106
+    weight: 5
     label: above
     settings:
       thousand_separator: ''
@@ -50,7 +51,7 @@ content:
     type: number_decimal
     region: content
   field_telephone:
-    weight: 107
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -58,7 +59,7 @@ content:
     type: string
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
