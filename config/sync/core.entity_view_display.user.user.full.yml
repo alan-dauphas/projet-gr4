@@ -1,9 +1,9 @@
-uuid: d77f270a-f7db-4f1a-bdc3-3fd86129f659
+uuid: fac3063d-df65-47e2-99aa-491539cd9ba0
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.user.compact
+    - core.entity_view_mode.user.full
     - field.field.user.user.field_adresse
     - field.field.user.user.field_indications_particulieres
     - field.field.user.user.field_nom
@@ -11,11 +11,11 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
-id: user.user.compact
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.full
 targetEntityType: user
 bundle: user
-mode: compact
+mode: full
 content: {  }
 hidden:
   field_adresse: true
