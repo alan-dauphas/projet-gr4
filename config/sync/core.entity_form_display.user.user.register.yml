@@ -1,8 +1,9 @@
-uuid: e76a512d-6a24-42c0-9b2b-686263aa00cf
+uuid: 57c0c6eb-3947-4c19-be91-65ea4766e80c
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.user.register
     - field.field.user.user.field_adresse
     - field.field.user.user.field_indications_particulieres
     - field.field.user.user.field_nom
@@ -13,59 +14,65 @@ dependencies:
     - address
     - user
 _core:
-  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
-id: user.user.default
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.register
 targetEntityType: user
 bundle: user
-mode: default
+mode: register
 content:
-  field_adresse:
-    weight: 2
-    label: above
+  account:
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_adresse:
     type: address_default
-    region: content
-  field_indications_particulieres:
-    weight: 3
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_nom:
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_organisation_societe:
-    weight: 4
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_prenom:
-    weight: 1
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_site_personnel:
     weight: 5
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_indications_particulieres:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nom:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_organisation_societe:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_prenom:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_site_personnel:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
+  contact: true
   langcode: true
-  member_for: true
+  language: true
+  timezone: true
