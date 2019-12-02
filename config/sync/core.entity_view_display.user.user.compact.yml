@@ -21,6 +21,8 @@ hidden:
   field_adresse: true
   field_indications_particulieres: true
   field_nom: true
+  field_organisation_societe: true
   field_prenom: true
+  field_site_personnel: true
   langcode: true
   member_for: true

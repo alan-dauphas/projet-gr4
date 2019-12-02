@@ -5,5 +5,5 @@ dependencies: {  }
 id: particiapants
 label: Participants
 weight: 4
-is_admin: true
+is_admin: false
 permissions: {  }
