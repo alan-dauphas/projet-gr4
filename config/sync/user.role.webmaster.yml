@@ -7,7 +7,10 @@ label: Webmaster
 weight: 5
 is_admin: null
 permissions:
+  - 'access toolbar'
+  - 'administer actions'
   - 'administer comments'
+  - 'administer workflows'
   - 'create hotels content'
   - 'create programmes content'
   - 'delete any hotels content'
@@ -23,6 +26,13 @@ permissions:
   - 'edit own programmes content'
   - 'revert hotels revisions'
   - 'revert programmes revisions'
+  - 'use moderation_programmes transition create_new_draft'
+  - 'use moderation_programmes transition en_attente_de_validation'
+  - 'use moderation_programmes transition publish'
+  - 'use moderation_programmes transition rejet_de_validation'
+  - 'use moderation_programmes transition validation'
+  - 'view any unpublished content'
   - 'view hotels revisions'
+  - 'view latest version'
   - 'view own unpublished content'
   - 'view programmes revisions'
