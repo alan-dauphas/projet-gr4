@@ -7,9 +7,7 @@ label: Organisateur
 weight: 3
 is_admin: null
 permissions:
-  - 'access toolbar'
   - 'access user profiles'
-  - 'administer actions'
   - 'change own username'
   - 'create hotels content'
   - 'create programmes content'
@@ -24,11 +22,6 @@ permissions:
   - 'edit own programmes content'
   - 'revert hotels revisions'
   - 'revert programmes revisions'
-  - 'use editorial transition archive'
-  - 'use editorial transition create_new_draft'
-  - 'use moderation_programmes transition create_new_draft'
-  - 'view any unpublished content'
   - 'view hotels revisions'
-  - 'view latest version'
   - 'view own unpublished content'
   - 'view programmes revisions'
