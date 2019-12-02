@@ -1,23 +1,18 @@
-uuid: 3f18869e-fa0b-4de2-9978-684273d06e72
+uuid: 2d8c0ff5-f919-4494-858a-80dde0e0ded0
 langcode: fr
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform
-_core:
-  default_config_hash: 9VvRhyFTsY3ILtr6v0MP2VOX_kVhh7ZU2E0YzCXGxtU
+dependencies: {  }
 open: null
 close: null
 weight: 0
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: formulaire_d_adhesion
+title: 'formulaire d''adhesion'
+description: ''
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+elements: "interet_du_participant_au_programme:\n  '#type': textfield\n  '#title': 'interet du participant au programme'\n  '#required': true\n  '#required_error': 'Intérêt Obligatoir'\ndate_d_arrivee:\n  '#type': date\n  '#title': 'Date d''arrivée'\n  '#required': true\n  '#required_error': 'Date d''arrivée Obligatoire'\n  '#datepicker': true\ndate_de_dpart:\n  '#type': date\n  '#title': 'Date de Dpart'\n  '#required': true\n  '#required_error': 'Date de Départ Obligatoire'\n  '#datepicker': true\nchoix_d_un_hotels_:\n  '#type': webform_entity_select\n  '#title': 'Choix d''un Hôtels '\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      hotels: hotels\ncoordonnees:\n  '#type': address\n  '#title': Coordonnées\n  '#field_overrides':\n    givenName: hidden\n    additionalName: hidden\n    familyName: hidden\n    organization: hidden\n    addressLine1: hidden\n    addressLine2: hidden\n    sortingCode: hidden\n    dependentLocality: hidden\n    administrativeArea: hidden\nun_fichier:\n  '#type': webform_document_file\n  '#title': 'un fichier'\n  '#file_preview': file"
 css: ''
 javascript: ''
 settings:
@@ -30,7 +25,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_admin_theme: false
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -104,10 +99,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: page
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
-  confirmation_url: '<front>'
+  confirmation_message: ''
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -179,74 +174,4 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email_confirmation:
-    id: email
-    label: 'Courriel de confirmation'
-    handler_id: email_confirmation
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[webform_submission:values:email:raw]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-  email_notification:
-    id: email
-    label: 'Notification par courriel'
-    handler_id: email_notification
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: _default
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
-      from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
+handlers: {  }
