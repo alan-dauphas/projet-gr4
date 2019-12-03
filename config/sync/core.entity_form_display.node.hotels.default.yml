@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.hotels.field_address
+    - field.field.node.hotels.field_adressee
     - field.field.node.hotels.field_description
     - field.field.node.hotels.field_email
     - field.field.node.hotels.field_prix
@@ -17,8 +17,8 @@ targetEntityType: node
 bundle: hotels
 mode: default
 content:
-  field_address:
-    weight: 29
+  field_adressee:
+    weight: 30
     settings: {  }
     third_party_settings: {  }
     type: address_default
