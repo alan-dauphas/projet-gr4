@@ -1,19 +1,19 @@
-uuid: fdab79d2-e00a-4445-aa3d-376fff0afd38
+uuid: 73dc5af2-eb2c-4d5f-82a9-8c88108b6e73
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_address
+    - field.storage.node.field_adressee
     - node.type.hotels
   module:
     - address
-id: node.hotels.field_address
-field_name: field_address
+id: node.hotels.field_adressee
+field_name: field_adressee
 entity_type: node
 bundle: hotels
-label: address
+label: Adressee
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

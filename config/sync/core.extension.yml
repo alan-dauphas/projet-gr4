@@ -17,6 +17,7 @@ module:
   config_split: 0
   contact: 0
   content_access: 0
+  content_moderation: 0
   contextual: 0
   datetime: 0
   dynamic_page_cache: 0
@@ -27,6 +28,7 @@ module:
   filter: 0
   image: 0
   language: 0
+  layout_discovery: 0
   link: 0
   locale: 0
   menu_ui: 0
@@ -35,6 +37,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  projetgr4: 0
   quickedit: 0
   rdf: 0
   registration_role: 0
@@ -50,6 +53,7 @@ module:
   webform: 0
   webform_devel: 0
   webform_ui: 0
+  workflows: 0
   menu_link_content: 1
   views: 10
   standard: 1000
